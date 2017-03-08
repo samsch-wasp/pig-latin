@@ -40,6 +40,10 @@ public class PigLatin{
     public static void main (String args[]) {
         String word = "Banana"; // Default word
 
+        if(args.length>0){
+            word = args[0];
+        }
+
         System.out.println(pigLatin(word));
     }
 }
