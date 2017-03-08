@@ -38,7 +38,7 @@ public class PigLatin{
     }
 
     public static void main (String args[]) {
-        String word = "Pig"; // Default word
+        String word = "Eat"; // Default word
 
         System.out.println(pigLatin(word));
     }
