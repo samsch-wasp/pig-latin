@@ -12,6 +12,12 @@ public class PigLatin{
         return consonants.contains(c);
     }
 
+    public static Boolean isVowel(char c){
+        List consonants = Arrays.asList('A', 'a','I', 'i', 'E', 'e','O', 'o');
+
+        return consonants.contains(c);
+    }
+
 
     public static String pigLatin(String in){
 
@@ -28,7 +34,7 @@ public class PigLatin{
                 // First char cosonant, second other
                 out = in.substring(1) + in.substring(0,1) + "ay";
             }
-        }else{
+        }else if(isVowel(in.charAt(0))){
             // First char not consoant, could be vovel
             out = in + "way";
         }
