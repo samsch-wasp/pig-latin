@@ -14,6 +14,12 @@ public class TestPigLatin {
         assertEquals("ananabay", piglatin.pigLatin("banana"));
     }
 
+    @Test
+    public void vovelRule() {
+        PigLatin piglatin = new PigLatin();
+        assertEquals("eatway", piglatin.pigLatin("eat"));
+    }
+
 
     // Example of failing test
     // @Test
