@@ -1,13 +1,11 @@
-# minimal-tool-chain
+# pig-latin
 
-This repository contains code for a minimal Java tool chain with
+This repository contains code for a simple pig latin tool
 
 * Some Java source code, see `src/main/java`
 * Some JUnit tests, see `src/test/java`
-* An Ant build file with targets for `build`, `test`, `jar`, and `clean`. See `build.xml`.
-* The source files are organized according to the Maven standard directory layout. See https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html .This facilitates integration with other tools, like the Continuous Integration tool Travis.
+* An Ant build file with targets for `build`, `test`, `jar`, `run` and `clean`. See `build.xml`.
 * We don't use any dependencies to download libraries. Instead, all dependent libraries are in included in the project in the `lib` folder.
-* There is a fork of this project that uses Gradle instead of Ant, and that has a `.travis.yml` file for integration with Travis. See https://github.com/llbit/minimal-tool-chain
 
 # Installation
 
@@ -16,12 +14,12 @@ To run this project, you need to have Java and Ant installed.
 # Build
 
 Do
-* `ant` to compile
+* `ant build` to compile
 * `ant test` to additionally run all tests
-* `ant jar` to generate a `Product.jar` file
+* `ant jar` to generate a `PigLatin.jar` file
 * `ant clean` to clean away generated files.
 
 # Run
 
 Run the generated jar file by:
-* `java -jar Product.jar`
+* `ant run`
