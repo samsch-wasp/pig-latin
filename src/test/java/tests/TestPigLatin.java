@@ -8,16 +8,22 @@ import WordPlay.*;
 
 public class TestPigLatin {
 
-	@Test
-	public void consoantRule() {
-            PigLatin piglatin = new PigLatin();
-            assertEquals("ananabay", piglatin.pigLatin("banana"));
-	}
+    @Test
+    public void consoantRule() {
+        PigLatin piglatin = new PigLatin();
+        assertEquals("ananabay", piglatin.pigLatin("banana"));
+    }
 
-	// Example of failing test
-	// @Test
-	// public void failingTest() {
-	//	 assertEquals(0,1);
-	// }
+    @Test
+    public void vovelRule(){
+        PigLatin piglatin = new PigLatin();
+        assertEquals("eataway", piglatin.pigLatin("eat"));
+    }
+
+    // Example of failing test
+    // @Test
+    // public void failingTest() {
+    //	 assertEquals(0,1);
+    // }
 
 }
