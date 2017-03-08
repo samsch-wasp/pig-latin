@@ -33,7 +33,6 @@ public class TestPigLatin {
     }
 
 
-
     // Example of failing test
     // @Test
     // public void failingTest() {
