@@ -30,7 +30,7 @@ public class PigLatin{
             }
         }else{
             // First char not consoant, could be vovel
-            // To be implemented
+            out = in + "way";
         }
 
 
