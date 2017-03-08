@@ -13,7 +13,8 @@ public class PigLatin{
     }
 
     public static Boolean isVowel(char c){
-        List consonants = Arrays.asList('A', 'a','I', 'i', 'E', 'e','O', 'o');
+        List consonants = Arrays.asList('A','E','I','O',
+                                        'a', 'e', 'i', 'o');
 
         return consonants.contains(c);
     }
@@ -35,7 +36,11 @@ public class PigLatin{
                 out = in.substring(1) + in.substring(0,1) + "ay";
             }
         }else if(isVowel(in.charAt(0))){
+<<<<<<< HEAD
             // First char not consoant, could be vovel
+=======
+            // First char not consoant, could be vowel
+>>>>>>> 18dd18abca670dd2ec0967377b0ba3c6c86026c1
             out = in + "way";
         }
 
