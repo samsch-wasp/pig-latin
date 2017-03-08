@@ -26,6 +26,12 @@ public class TestPigLatin {
         assertEquals("eerschay", piglatin.pigLatin("cheers"));
     }
 
+    @Test
+    public void wordRow(){
+        PigLatin piglatin = new PigLatin();
+        assertEquals("anksthay oistmay eggway omeletway", piglatin.pigLatin("thanks moist egg omelet"));
+    }
+
 
 
     // Example of failing test
