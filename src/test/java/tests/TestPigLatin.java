@@ -20,6 +20,13 @@ public class TestPigLatin {
         assertEquals("eatway", piglatin.pigLatin("eat"));
     }
 
+    @Test
+    public void consonantClusterRule() {
+        PigLatin piglatin = new PigLatin();
+        assertEquals("eerschay", piglatin.pigLatin("cheers"));
+    }
+
+
 
     // Example of failing test
     // @Test
