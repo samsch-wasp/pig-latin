@@ -27,8 +27,13 @@ public class PigLatin{
 
         for(int i = 0; i< in_array.length; i++){
 
-            String in = in_array[i].toLowerCase(); // Only support for lowercase
+            //String in = in_array[i].toLowerCase(); // Only support for lowercase
 
+            String in = in_array[i];
+            
+            boolean capital = Character.isUpperCase(in.charAt(0)); //check if first letter capital
+
+            in = in.toLowerCase();
             String out = in;
 
             if(isConsonant(in.charAt(0))){
@@ -43,9 +48,12 @@ public class PigLatin{
                 out = in.substring(nConsonants) + in.substring(0,nConsonants) + "ay";
 
             }else if(isVowel(in.charAt(0))){
-                // First char not consoant, could be vowel
+                // First char vowel
                 out = in + "way";
             }
+
+            if(capital)
+                out = out.substring(0,1).toUpperCase() + out.substring(1); //set capital letter
 
             out_array[i] = out;
 
@@ -55,12 +63,18 @@ public class PigLatin{
     }
 
     public static void main (String args[]) {
-        String word = "Banana"; // Default word
 
-        if(args.length>0){
-            word = args[0];
+        if(args.length == 0){
+            System.out.println("Proper Usage is: java program \"my sentence\"");
+            System.exit(0);
         }
 
-        System.out.println(pigLatin(word));
+        String words = "";
+       
+        if(args.length>0){
+            words = args[0];
+        }
+
+        System.out.println(pigLatin(words));
     }
 }

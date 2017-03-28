@@ -32,6 +32,13 @@ public class TestPigLatin {
         assertEquals("anksthay oistmay eggway omeletway", piglatin.pigLatin("thanks moist egg omelet"));
     }
 
+    @Test
+    public void capitalLetters(){
+        PigLatin piglatin = new PigLatin();
+        assertEquals("Anksthay oistmay eggway Omeletway", piglatin.pigLatin("Thanks moist egg Omelet"));
+    }
+    
+
 
     // Example of failing test
     // @Test
