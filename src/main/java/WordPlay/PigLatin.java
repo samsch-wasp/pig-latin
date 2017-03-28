@@ -7,14 +7,14 @@ public class PigLatin{
 
 
     public static Boolean isConsonant(char c){
-        List consonants = Arrays.asList( 'B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'X', 'Z', 'W',
-                                         'b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'x', 'z', 'w');
+        List consonants = Arrays.asList( 'B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'X', 'Z', 'W', 'Y',
+                                         'b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'x', 'z', 'w','y');
         return consonants.contains(c);
     }
 
     public static Boolean isVowel(char c){
-        List consonants = Arrays.asList('A','E','I','O',
-                                        'a', 'e', 'i', 'o');
+        List consonants = Arrays.asList('A','E','I','O','U',
+                                        'a', 'e', 'i', 'o','u');
         return consonants.contains(c);
     }
 
