@@ -35,7 +35,7 @@ public class TestPigLatin {
     @Test
     public void capitalLetters(){
         PigLatin piglatin = new PigLatin();
-        assertEquals("Anksthay oistmay eggway Omeletway", piglatin.pigLatin("Thanks for the Omelet"));
+        assertEquals("Anksthay oistmay eggway Omeletway", piglatin.pigLatin("Thanks moist egg Omelet"));
     }
     
 

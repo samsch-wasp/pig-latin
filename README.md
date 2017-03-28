@@ -21,8 +21,5 @@ Do
 
 # Run
 
-Run the generated jar file by:
-* `ant run`
-
-To translate your own sentence:
-* `ant run -Dwords="this is my own sentence"`
+To translate your sentence:
+* `ant run -Dwords="this is my sentence"`
