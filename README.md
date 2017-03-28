@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/samsch-wasp/pig-latin.svg?branch=master)](https://travis-ci.org/samsch-wasp/pig-latin)
 # pig-latin
 
 This repository contains code for a simple pig latin tool
@@ -21,8 +22,5 @@ Do
 
 # Run
 
-Run the generated jar file by:
-* `ant run`
-
-To translate your own sentence:
-* `ant run -Dwords="this is my own sentence"`
+To translate your sentence:
+* `ant run -Dwords="this is my sentence"`
