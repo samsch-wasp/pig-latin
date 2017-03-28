@@ -39,7 +39,9 @@
 
 
         <target name="run">
-          <java jar="${product.jar}" fork="true"/>
+		<java jar="${product.jar}" fork="true">
+			<arg value="${words}"/>
+		</java>
         </target>
 
 </project>
