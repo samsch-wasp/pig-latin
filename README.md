@@ -23,5 +23,6 @@ Do
 
 Run the generated jar file by:
 * `ant run`
+
 To translate your own sentence:
 * `ant run -Dwords="this is my own sentence"`
